@@ -186,7 +186,7 @@ foreach my $mark (@MARKS) {
     run_hooks($mark, "recon");
     run_hooks($mark, "scan");
 
-    if ($mark->{'total_errors'} > 0 || $mark->{'total_vulns'} > 0) {
+    if ($mark->{'total_errors'} > 0) {
         $is_failure = 1;
     }
 
